@@ -21,6 +21,7 @@ public class Manager implements Serializable {
 	private String managerID;
 	private String managerName;
 	private String managerAge;
+	private String managerDepartment;
 	
 	public Manager() {
 		// No Argument Constructor
@@ -33,11 +34,12 @@ public class Manager implements Serializable {
 	 * @param managerName
 	 * @param managerAge
 	 */
-	public Manager(String managerID, String managerName, String managerAge) {
+	public Manager(String managerID, String managerName, String managerAge, String managerDepartment) {
 		super();
 		this.managerID = managerID;
 		this.managerName = managerName;
 		this.managerAge = managerAge;
+		this.managerDepartment = managerDepartment;
 	}
 
 
@@ -83,6 +85,24 @@ public class Manager implements Serializable {
 	public void setManagerAge(String managerAge) {
 		this.managerAge = managerAge;
 	}
-	
 
+
+
+	/**
+	 * @return the managerDepartment
+	 */
+	public String getManagerDepartment() {
+		return managerDepartment;
+	}
+
+
+
+	/**
+	 * @param managerDepartment the managerDepartment to set
+	 */
+	public void setManagerDepartment(String managerDepartment) {
+		this.managerDepartment = managerDepartment;
+	}
+	
+	
 }
