@@ -4,6 +4,7 @@
 package com.git.steps.tutorial;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 /**
  * @author Arunangsu
@@ -19,6 +20,7 @@ public class Employee implements Serializable {
 	private String employeeName;
 	private String employeeAge;
 	private String employeeSalary;
+	private Date employeeJoiningDate;
 
 	/**
 	 * 
@@ -27,12 +29,13 @@ public class Employee implements Serializable {
 		// No Argument 
 	}
 
-	public Employee(String employeeId, String employeeName, String employeeAge, String employeeSalary) {
+	public Employee(String employeeId, String employeeName, String employeeAge, String employeeSalary, Date employeeJoiningDate) {
 		super();
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
 		this.employeeAge = employeeAge;
 		this.employeeSalary = employeeSalary;
+		this.employeeJoiningDate = employeeJoiningDate;
 	}
 
 	/**
@@ -89,6 +92,20 @@ public class Employee implements Serializable {
 	 */
 	public void setEmployeeSalary(String employeeSalary) {
 		this.employeeSalary = employeeSalary;
+	}
+
+	/**
+	 * @return the employeeJoiningDate
+	 */
+	public Date getEmployeeJoiningDate() {
+		return employeeJoiningDate;
+	}
+
+	/**
+	 * @param employeeJoiningDate the employeeJoiningDate to set
+	 */
+	public void setEmployeeJoiningDate(Date employeeJoiningDate) {
+		this.employeeJoiningDate = employeeJoiningDate;
 	}
 	
 	
